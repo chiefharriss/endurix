@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Arial Black";
+  --font-body: Arial;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    repeating-linear-gradient(112deg, rgba(224, 25, 25, 0.08) 0 1px, transparent 1px 18px),
+    linear-gradient(180deg, #050505 0%, #111 48%, #050505 100%);
+  color: #f4efe7;
+  font-family: var(--font-body), Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: #e01919;
+  color: #f4efe7;
+}
+
+.noise {
+  position: relative;
+  overflow: hidden;
+}
+
+.noise::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.16;
+  background-image:
+    linear-gradient(115deg, transparent 0 42%, rgba(244, 239, 231, 0.08) 42% 44%, transparent 44%),
+    repeating-linear-gradient(0deg, rgba(244, 239, 231, 0.08) 0 1px, transparent 1px 5px);
+  mix-blend-mode: screen;
+}
+
+.asset-fallback {
+  background:
+    linear-gradient(135deg, rgba(224, 25, 25, 0.45), transparent 36%),
+    repeating-linear-gradient(-16deg, rgba(244, 239, 231, 0.1) 0 1px, transparent 1px 18px),
+    linear-gradient(135deg, #171717, #050505 65%);
+}
+
+.clip-slash {
+  clip-path: polygon(0 0, 100% 0, 92% 100%, 0% 100%);
+}
+
+.page-shell {
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+.section-pad {
+  @apply py-16 sm:py-20 lg:py-24;
+}
+
+.eyebrow {
+  letter-spacing: 0;
+  @apply text-xs font-black uppercase text-track;
+}
+
+.headline {
+  @apply font-display text-4xl uppercase leading-[0.95] sm:text-5xl lg:text-7xl;
+}
+
+.subhead {
+  @apply max-w-3xl text-base leading-7 text-bone/80 sm:text-lg;
+}
