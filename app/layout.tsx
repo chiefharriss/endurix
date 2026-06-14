@@ -4,9 +4,9 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "ENDURIX — эндуро тренировки в Московской области",
+  title: "ENDURIX - эндуро тренировки в Московской области",
   description:
-    "ENDURIX — тренировки по эндуро и hard enduro в Осеченках. Индивидуальные и групповые занятия для детей и взрослых на своём мотоцикле.",
+    "Тренировки для начинающих и опытных райдеров на своем мотоцикле.",
   keywords: [
     "эндуро тренировки",
     "hard enduro",
@@ -18,9 +18,8 @@ export const metadata: Metadata = {
     "эндуро для взрослых"
   ],
   openGraph: {
-    title: "ENDURIX — эндуро тренировки в Московской области",
-    description:
-      "Hard enduro coaching в Осеченках для детей и взрослых на своём мотоцикле.",
+    title: "ENDURIX - эндуро тренировки в Московской области",
+    description: "Тренировки для начинающих и опытных райдеров на своем мотоцикле.",
     type: "website",
     locale: "ru_RU"
   },
