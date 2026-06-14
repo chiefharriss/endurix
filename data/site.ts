@@ -1,9 +1,10 @@
 export const contacts = {
   phoneText: "+7 967 299-30-08",
   phoneHref: "tel:+79672993008",
-  telegramText: "@chief_harriss",
-  telegramHref: "https://t.me/chief_harriss",
-  tiktokHref: "https://www.tiktok.com/@chief_harriss?_t=ZS-8xKXuwUTySX&_r=1",
+  telegramText: "@endurix_ru",
+  telegramHref: "https://t.me/endurix_ru",
+  tiktokHref: "https://www.tiktok.com/@endurix_ru",
+  instagramHref: "https://www.instagram.com/endurix_ru",
   location: "Осеченки, Московская область"
 };
 
@@ -18,6 +19,7 @@ export const navItems = [
 
 export const assetSlots = {
   logo: "/assets/logo-endurix.png",
+  textLogo: "/assets/logo-text.png",
   footerBrand: "/assets/brand-footer.png",
   hero: "/assets/hero-rider.jpg",
   zakhar: "/assets/zakhar-forest.jpg",

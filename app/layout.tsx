@@ -23,6 +23,13 @@ export const metadata: Metadata = {
       "Hard enduro coaching в Осеченках для детей и взрослых на своём мотоцикле.",
     type: "website",
     locale: "ru_RU"
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "32x32" },
+      { url: "/favicon.png", sizes: "512x512", type: "image/png" }
+    ],
+    apple: "/favicon.png"
   }
 };
 
